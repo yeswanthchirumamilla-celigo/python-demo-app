@@ -11,7 +11,7 @@ def count_vowels(s):
 
 def find_word(text, word):
     """Check if word exists in text. Returns True/False."""
-    return word in text
+    return word.lower() in text.lower()
 
 
 def capitalize_words(s):
