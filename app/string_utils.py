@@ -1,5 +1,6 @@
-"""String utility functions.
-
+"""
+string_utils.py
+---------------
 This module provides utility functions for string manipulation, such as reversing, counting vowels, finding words, capitalizing, and truncating strings.
 """
 
@@ -12,7 +13,10 @@ def count_vowels(s):
     return sum(1 for c in s if c in "aeiou")
 
 def find_word(text, word):
-    """Check if word exists in text. Returns True if found, False otherwise."""
+    """
+    Check if word exists in text.
+    Returns True if found, otherwise False.
+    """
     return word in text
 
 def capitalize_words(s):
@@ -20,7 +24,7 @@ def capitalize_words(s):
     return " ".join(w.capitalize() for w in s.split())
 
 def truncate(s, max_length):
-    """Truncate the string s to max_length characters. If s is shorter, return s unchanged."""
+    """Truncate the string s to max_length characters if necessary."""
     if len(s) <= max_length:
         return s
     return s[:max_length]
