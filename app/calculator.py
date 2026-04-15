@@ -1,7 +1,7 @@
-"""Basic calculator operations.
-
-This module provides basic arithmetic operations: addition, subtraction, multiplication, division, and exponentiation.
-Each function takes numerical arguments and returns the result of the operation.
+"""
+calculator.py
+-------------
+This module provides basic calculator operations such as addition, subtraction, multiplication, division, and exponentiation.
 """
 
 def add(a, b):
@@ -17,7 +17,10 @@ def multiply(a, b):
     return a * b
 
 def divide_numbers(a, b):
-    """Divide a by b and return the result. Raises ValueError on division by zero."""
+    """
+    Divide a by b and return the result.
+    Raises ValueError on division by zero.
+    """
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
